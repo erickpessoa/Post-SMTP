@@ -460,6 +460,14 @@ if ( ! class_exists( 'PostmanOptions' ) ) {
 			if ( isset( $this->options [ PostmanOptions::SENDGRID_API_KEY ] ) ) {
 				return base64_decode( $this->options [ PostmanOptions::SENDGRID_API_KEY ] ); }
 		}
+		public function getSeatiApiKey() {
+			if ( defined( 'POST_SMTP_API_KEY' ) ) {
+				return POST_SMTP_API_KEY;
+			}
+
+			if ( isset( $this->options [ PostmanOptions::SEATI_API_KEY ] ) ) {
+				return base64_decode( $this->options [ PostmanOptions::SEATI_API_KEY ] ); }
+		}
 		public function getMailgunApiKey() {
 			if ( defined( 'POST_SMTP_API_KEY' ) ) {
 				return POST_SMTP_API_KEY;
