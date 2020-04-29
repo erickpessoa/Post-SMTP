@@ -86,6 +86,7 @@ if ( ! class_exists( 'PostmanOptions' ) ) {
 		const BASIC_AUTH_PASSWORD = 'basic_auth_password';
 		const MANDRILL_API_KEY = 'mandrill_api_key';
 		const SENDGRID_API_KEY = 'sendgrid_api_key';
+		const SEATI_API_KEY = 'seati_api_key';
 		const MAILGUN_API_KEY = 'mailgun_api_key';
 		const MAILGUN_DOMAIN_NAME = 'mailgun_domain_name';
 		const MAILGUN_REGION = 'mailgun_region';
